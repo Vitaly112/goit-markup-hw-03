@@ -175,6 +175,7 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 .values-list {
   background-color: #ffffff;
@@ -267,7 +268,8 @@ ul {
   background-color: #ffffff;
 }
 .description-portfolio {
-  padding: 32px 0;
+  padding: 32px 16px;
+  background-origin: 1px solid #e7e9fc;
 }
 .portfolio-third-title {
   text-align: center;
@@ -279,12 +281,13 @@ ul {
 .footer {
   flex-shrink: 0;
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .footer-container {
-  padding: 100px 1020px 100px 0px;
+  
 }
 .footer-logo {
-  display: inline-flex;
+  display: inline-block;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -292,7 +295,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .white-logo {
   color: #f4f4fd;
