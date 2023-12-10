@@ -33,13 +33,40 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .main-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+.text {
+  text-align: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo {
+  display: inline-flex;
+  align-items: center;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -57,7 +84,16 @@ ul {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 76px;
+}
 .header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -67,6 +103,11 @@ ul {
 .header-link:focus,
 .header-link:hover {
   color: #404bbf;
+}
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .address {
   font-style: normal;
@@ -86,6 +127,9 @@ ul {
 .main-hero {
   background-color: #2e2f42;
 }
+.hero-container {
+  padding: 188px 472px 292px 472px;
+}
 .main-title {
   color: #fff;
   text-align: center;
@@ -93,6 +137,8 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
+  margin-bottom: 48px;
 }
 .hero-button {
   color: #fff;
@@ -102,10 +148,16 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  padding: 16px 32px;
 }
 .hero-button:focus,
 .hero-button:hover {
   background-color: #404bbf;
+}
+.main-values {
+  padding: 120px 0px;
+}
+.values-container {
 }
 
 .values-second-title {
@@ -118,39 +170,48 @@ ul {
 }
 .values-list {
   background-color: #ffffff;
+  display: flex;
+  gap: 24px;
 }
-.values-third-title {
+.values-items {
+  width: 264px;
+}
+
+.values-third-title,
+.portfolio-third-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  padding-bottom: 8px;
 }
 
 .main-team {
   background-color: #f4f4fd;
+  padding: 120px 0px;
 }
-.team-second-title {
-  color: #2e2f42;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
+.img {
+  padding-bottom: 32px;
+}
+.main-list {
+  display: inline-flex;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+.main-items {
+  width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-third-title {
-  color: #2e2f42;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
+.main-portfolio {
+  padding: 120px 0px;
 }
-.main-link {
-  background-color: #ffffff;
-}
+.team-second-title,
 .portfolio-second-title {
   color: #2e2f42;
   text-align: center;
@@ -159,20 +220,41 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
-.portfolio-third-title {
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.portfolio-items {
+  width: 360px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
+  width: calc((100% - 24px * 2) / 3);
+}
+.team-third-title {
   color: #2e2f42;
+  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  padding-bottom: 8px;
+}
+.main-link {
+  background-color: #ffffff;
 }
 
 .footer {
   flex-shrink: 0;
   background-color: #2e2f42;
 }
+.footer-container {
+  padding: 100px 1020px 100px 0px;
+}
 .footer-logo {
+  display: inline-flex;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -180,6 +262,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  padding-bottom: 16px;
 }
 .white-logo {
   color: #f4f4fd;
@@ -191,6 +274,7 @@ ul {
   text-transform: uppercase;
 }
 .footer-description {
+  width: 264px;
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
