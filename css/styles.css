@@ -130,7 +130,7 @@ ul {
   background-color: #2e2f42;
 }
 .hero-container {
-  
+
 }
 .main-title {
   color: #fff;
@@ -140,7 +140,10 @@ ul {
   line-height: 1.07;
   letter-spacing: 1.12px;
   max-width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
+  
+  
 }
 .hero-button {
   color: #fff;
@@ -156,6 +159,7 @@ ul {
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
 }
 .hero-button:focus,
 .hero-button:hover {
