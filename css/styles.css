@@ -130,7 +130,7 @@ ul {
   background-color: #2e2f42;
 }
 .hero-container {
-  /* padding: 188px 472px 292px 472px; */
+  
 }
 .main-title {
   color: #fff;
@@ -185,7 +185,7 @@ ul {
   width: 264px;
 }
 .values-third-title {
-
+  margin-bottom: 8px;
 }
 
 .values-third-title,
@@ -273,6 +273,7 @@ ul {
   padding: 32px 16px;
   background-origin: 1px solid #e7e9fc;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-third-title {
   text-align: center;
@@ -287,7 +288,6 @@ ul {
   padding: 100px 0;
 }
 .footer-container {
-  
 }
 .footer-logo {
   display: inline-block;
@@ -317,5 +317,3 @@ ul {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-
-
