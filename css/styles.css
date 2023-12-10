@@ -175,7 +175,6 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin-bottom: 8px;
 }
 .values-list {
   background-color: #ffffff;
@@ -184,6 +183,9 @@ ul {
 }
 .values-items {
   width: 264px;
+}
+.values-third-title {
+
 }
 
 .values-third-title,
@@ -270,6 +272,7 @@ ul {
 .description-portfolio {
   padding: 32px 16px;
   background-origin: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-third-title {
   text-align: center;
